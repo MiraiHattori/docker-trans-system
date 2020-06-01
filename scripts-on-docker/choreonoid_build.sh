@@ -4,8 +4,9 @@ cd /userdir/choreonoid_ws/
 sed -i -e 's@OPENRTM_VERSION STREQUAL "1.1.2"@OPENRTM_VERSION STREQUAL "1.1.0"@' choreonoid/CMakeLists.txt
 sed -i -e 's@OPENRTM_VERSION VERSION_EQUAL "1.1.2"@OPENRTM_VERSION VERSION_EQUAL "1.1.0"@' choreonoid/CMakeLists.txt
 sed -i -e 's@OPENRTM_VERSION VERSION_EQUAL "1.1.2"@OPENRTM_VERSION VERSION_EQUAL "1.1.0"@' choreonoid/CMakeLists.txt
-sed -i -e '1s@^@cmake_policy(SET CMP0057 NEW)\n@' choreonoid/cmake/ChoreonoidFindQt.cmake
+# sed -i -e '1s@^@cmake_policy(SET CMP0057 NEW)\n@' choreonoid/cmake/ChoreonoidFindQt.cmake
 ./choreonoid/misc/script/install-requisites-ubuntu-16.04.sh
+source /opt/ros/kinetic/setup.bash # for openrtm
 cd choreonoid
 mkdir build
 cd build
