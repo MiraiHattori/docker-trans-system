@@ -1,7 +1,14 @@
-以下の順に実行
-./clone_catkin_ws.sh
-./clone_choreonoid.sh
-./docker_build.sh
-./build_choreonoid.sh
-./catkin_build.sh
+# setup
+execute commands below
+```bash
+./clone_catkin_ws.sh # to revert, call rm -rf catkin_ws
+./clone_choreonoid.sh # to revert, call rm -rf choreonoid_ws
+./docker_build.sh # to revert, call docker rm choreonoidsim
+./choreonoid_build.sh # to revert, call ./choreonoid_clean.sh
+./catkin_build.sh # to revert, call ./catkin_clean.sh
+```
+
+# 実行
+```bash
 ./jaxon_red_choreonoid.sh
+```
