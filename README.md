@@ -8,7 +8,7 @@ execute commands below
 ./catkin_build.sh # to revert, call ./catkin_clean.sh
 ```
 
-# 実行
+# execute
 ```bash
 ./jaxon_red_choreonoid.sh
 ```
