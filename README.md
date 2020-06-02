@@ -8,7 +8,28 @@ execute commands below
 ./catkin_build.sh # to revert, call ./catkin_clean.sh
 ```
 
+## my setup
+```bash
+./my_tennis_build.sh
+```
+
 # execute
 ```bash
-./jaxon_red_choreonoid.sh
+./my_launch_tennis.sh
+```
+```bash
+# another terminal
+./docker_exec.sh
+root@docker # ./scripts-on-docker/my_motion_exec.sh
+# press enter when you want to start stabilizer
+```
+```bash
+# another terminal
+./docker_exec.sh
+root@docker # ./scripts-on-docker/my_vision_launch.sh
+```
+```bash
+# another terminal
+./docker_exec.sh
+root@docker # ./scripts-on-docker/my_throw_ball.sh
 ```
