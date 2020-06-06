@@ -4,6 +4,7 @@ source /userdir/catkin_ws/devel/setup.bash
 cd /userdir/catkin_ws
 catkin build ball_state_msgs
 source /userdir/catkin_ws/devel/setup.bash
+apt-get install -y ros-kinetic-nlopt
 cd /userdir/my_ws/
 catkin b
 apt-get install -y libgsl-dev # for baseball
