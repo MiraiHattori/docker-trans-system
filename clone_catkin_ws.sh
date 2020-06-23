@@ -1,4 +1,5 @@
 #!/bin/bash
+# TODO use wstool instead
 mkdir -p catkin_ws/src
 git clone --recursive https://github.com/fkanehiro/hrpsys-base.git catkin_ws/src/fkanehiro/hrpsys
 git clone --recursive https://github.com/fkanehiro/openhrp3.git catkin_ws/src/fkanehiro/openhrp3
