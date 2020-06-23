@@ -10,6 +10,7 @@ execute commands below
 
 ## my setup
 ```bash
+./my_clone_tennis.sh
 ./my_tennis_build.sh
 ```
 
