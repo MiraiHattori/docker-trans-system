@@ -5,11 +5,11 @@ cd /userdir/catkin_ws
 catkin build ball_state_msgs
 source /userdir/catkin_ws/devel/setup.bash
 apt-get install -y ros-kinetic-nlopt
+apt-get install -y libgsl-dev # for baseball
 cd /userdir/my_ws/
 catkin b
-apt-get install -y libgsl-dev # for baseball
 source /userdir/my_ws/devel/setup.bash
-cd /userdir/my_ws/baseball
+cd /userdir/my_ws/src
 catkin build -c
 roscd hrpsys                      && git remote add future731 https://github.com/future731/hrpsys-base.git
 roscd hrpsys                      && git remote update -p && git reset --hard HEAD && git checkout bsp-modification
