@@ -19,7 +19,7 @@ roscd hrpsys_choreonoid_tutorials && git remote add future731 https://github.com
 roscd hrpsys_choreonoid_tutorials && git remote update -p && git reset --hard HEAD && git clean -fdx && git checkout add_pointgrey_camera
 echo "configure_file(\${PROJECT_SOURCE_DIR}/config/JAXON_RED_FOREHAND.cnoid.in \${PROJECT_SOURCE_DIR}/config/JAXON_RED_FOREHAND.cnoid @ONLY)" >> $(rospack find hrpsys_choreonoid_tutorials)/CMakeLists.txt
 source /userdir/my_ws/devel/setup.sh
-rosrun baseball choreonoid_settings.sh
+rosrun tennis choreonoid_settings.sh
 
 source /userdir/catkin_ws/devel/setup.bash
 roscd hrpsys_choreonoid_tutorials && catkin build --force-cmake
