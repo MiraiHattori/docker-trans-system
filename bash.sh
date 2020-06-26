@@ -7,7 +7,7 @@ cname=${DOCKER_CONTAINER:-"choreonoidsim"}
 DEFAULT_USER_DIR="$(pwd)"
 
 
-VAR=${@:-"/bin/bash"}
+VAR=${@:-"/bin/bash --rcfile /userdir/my_entryrc"}
 
 if [ "${DOCKER_ROS_IP}" == "" ]; then
     export DOCKER_ROS_IP=localhost
@@ -23,7 +23,7 @@ docker run ${OPT} --rm -it \
     --privileged \
     --gpus=all \
     ${NET_OPT} \
-    --env="DOCKER_ROS_SETUP=/catkin_ws/devel/setup.bash" \
+    --env="DOCKER_ROS_SETUP=/userdir/my_ws/devel/setup.bash" \
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
