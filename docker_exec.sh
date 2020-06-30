@@ -1,6 +1,6 @@
 #!/bin/bash
 
-container="choreonoidsim"
+container="jaxontennis"
 
 EXE=${@:-"/bin/bash --rcfile /userdir/my_entryrc"}
 
