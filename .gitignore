@@ -1,3 +1,6 @@
 catkin_ws/
 choreonoid_ws/
 my_ws/
+logs/
+strobe/
+!.gitkeep
