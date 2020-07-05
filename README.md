@@ -12,9 +12,10 @@ execute commands below
 ```bash
 ./my_clone_isk_solver
 ./my_isk_solver_build.sh
+# see my_ws/src/isk_solver/README.md
 ```
 
 # execute
 ```bash
-./jaxon_red_choreonoid.sh
+# see my_ws/src/isk_solver/README.md
 ```
