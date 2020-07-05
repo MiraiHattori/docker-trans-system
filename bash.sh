@@ -1,13 +1,13 @@
 #!/bin/bash
 
 OPT=${DOCKER_OPTION:-""}
-iname=${DOCKER_IMAGE:-"choreonoid:m-hattori"}
-cname=${DOCKER_CONTAINER:-"choreonoidsim"}
+iname=${DOCKER_IMAGE:-"isk-solver:m-hattori"}
+cname=${DOCKER_CONTAINER:-"isk-solver"}
 
 DEFAULT_USER_DIR="$(pwd)"
 
 
-VAR=${@:-"/bin/bash"}
+VAR=${@:-"/bin/bash --rcfile /my_entryrc"}
 
 if [ "${DOCKER_ROS_IP}" == "" ]; then
     export DOCKER_ROS_IP=localhost
@@ -23,7 +23,7 @@ docker run ${OPT} --rm -it \
     --privileged \
     --gpus=all \
     ${NET_OPT} \
-    --env="DOCKER_ROS_SETUP=/catkin_ws/devel/setup.bash" \
+    --env="DOCKER_ROS_SETUP=/userdir/my_ws/devel/setup.bash" \
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \

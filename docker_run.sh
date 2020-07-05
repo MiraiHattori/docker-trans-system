@@ -1,8 +1,8 @@
 #!/bin/bash
 
 OPT=${DOCKER_OPTION:-""}
-iname=${DOCKER_IMAGE:-"choreonoid:m-hattori"}
-cname=${DOCKER_CONTAINER:-"choreonoidsim"}
+iname=${DOCKER_IMAGE:-"isk-solver:m-hattori"}
+cname=${DOCKER_CONTAINER:-"isk-solver"}
 
 DEFAULT_USER_DIR="$(pwd)"
 

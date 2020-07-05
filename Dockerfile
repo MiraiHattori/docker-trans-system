@@ -1,5 +1,6 @@
 # FROM osrf/ros:kinetic-desktop-full
-FROM yoheikakiuchi/ros_gl:16.04
+# FROM yoheikakiuchi/ros_gl:16.04
+FROM khi_choreonoid:release-1.7
 
 RUN apt-get -q -qq update && apt-get upgrade -q -qq -y
 

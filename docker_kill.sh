@@ -1,2 +1,2 @@
 #!/bin/bash
-docker kill choreonoidsim
+docker kill isk-solver

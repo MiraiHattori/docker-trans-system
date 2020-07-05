@@ -1,6 +1,6 @@
 #!/bin/bash
 
-container="choreonoidsim"
+container="isk-solver"
 
 EXE=${@:-"/bin/bash"}
 
