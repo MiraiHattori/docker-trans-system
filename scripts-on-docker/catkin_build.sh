@@ -10,5 +10,5 @@ touch src/jsk-ros-pkg/trans_system/multisense_sl_gazebo_ros_plugin/CATKIN_IGNORE
 wstool update -t src
 rosdep install -y -r --from-paths --ignore-src .
 
-apt-get purge -y ros-kinetic-openhrp3 ros-kinetic-hrpsys
+# apt-get purge -y ros-kinetic-openhrp3 ros-kinetic-hrpsys
 catkin build -c
