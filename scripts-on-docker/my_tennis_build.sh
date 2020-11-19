@@ -6,6 +6,7 @@ catkin build ball_state_msgs
 source /userdir/catkin_ws/devel/setup.bash
 apt-get install -y ros-kinetic-nlopt
 cd /userdir/my_ws/
+mkdir -p /root/.local/share/nautilus/scripts
 catkin b
 source /userdir/my_ws/devel/setup.bash
 cd /userdir/my_ws/src
