@@ -17,7 +17,7 @@ roscd hrpsys_ros_bridge           && git remote update -p && git reset --hard HE
 roscd hrpsys_choreonoid_tutorials && git remote add future731 https://github.com/future731/rtmros_choreonoid.git
 roscd hrpsys_choreonoid_tutorials && git remote update -p && git reset --hard HEAD && git clean -fdx && git checkout add_pointgrey_camera
 source /userdir/my_ws/devel/setup.bash
-rosrun tennis choreonoid_settings.sh
+rosrun tennis_choreonoid choreonoid_settings.sh
 
 source /userdir/catkin_ws/devel/setup.bash
 roscd hrpsys_choreonoid_tutorials && catkin build --force-cmake

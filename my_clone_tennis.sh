@@ -8,3 +8,4 @@ git clone --recursive https://github.com/jsk-ros-pkg/jsk_control.git my_ws/src/j
 git clone --recursive https://github.com/kindsenior/log_plotter.git my_ws/src/log_plotter
 git clone --recursive https://github.com/future731/optmotiongen_sample.git my_ws/src/optmotiongen_sample
 git clone --recursive git@github.com:future731/tennis.git my_ws/src/tennis
+git clone --recursive git@github.com:future731/tennis_choreonoid.git my_ws/src/tennis_choreonoid
