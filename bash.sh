@@ -7,7 +7,7 @@ cname=${DOCKER_CONTAINER:-"choreonoidsim"}
 DEFAULT_USER_DIR="$(pwd)"
 
 
-VAR=${@:-"/bin/bash"}
+VAR=${@:-"/bin/bash --rcfile /userdir/my_entryrc"}
 
 if [ "${DOCKER_ROS_IP}" == "" ]; then
     export DOCKER_ROS_IP=localhost
